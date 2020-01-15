@@ -1,0 +1,3 @@
+<a href="mailto:Nicholasalex50@gmail.com"<i class="fa fa-envelope fa-5x-links" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/alex.nicholas.562"<i class="fa fa-facebook-official fa-5x-links" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/alexnicho19/"
+						<a href="https://www.linkedin.com/in/alexnicho19/"<i class="fa fa-linkedin-square fa-5x-links" aria-hidden="true"></i></a>

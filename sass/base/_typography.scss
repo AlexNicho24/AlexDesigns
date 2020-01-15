@@ -1,0 +1,124 @@
+.header__text--box{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+
+  &--main{
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    animation: moveInRight 1s ease-out;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;//1rem = 8px, 8/16=50%
+    }
+
+    /*
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    */
+  }
+
+  &--sub{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(phone){
+      letter-spacing: .5rem;
+    }
+  }
+}
+
+.heading-secondary{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin: 10rem auto;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @include respond(Tablet-Portrait){
+    font-size: 3rem;
+  }
+
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
+}
+
+.heading-secondary--2{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin: 10rem auto;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .8rem;
+}
+
+.heading-secondary-contacts{
+  color: #FFF;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin: 10rem auto;
+  font-family: 'Pacifico', cursive;
+}
+
+.header--socialmedia-banner{
+  color: #FFF;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin: 3rem auto;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+
+.heading-tertiary--2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
+
+  @include respond(Tablet-Landscape){
+    font-size: 2.5em;
+  }
+}
+
+.paragraph{
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: left;
+
+  @include respond(Tablet-Landscape){
+    font-size: 2.5em;
+    padding: 1rem;
+  }
+}

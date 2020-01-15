@@ -1,0 +1,59 @@
+.header-parallax{
+  height: 100vh;
+  background-image: linear-gradient(to right bottom,
+  rgba(15,32,39,0.8), rgba(32,58,67,0.8),
+  rgba(44,83,100,0.8)), url(../img/city-streets.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-about{
+  background-color: #f7f7f7;
+}
+
+.picture__photo--1{
+  margin-bottom: 6rem;
+  border-radius: 360px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+
+  &:hover{
+    transform: translateY(-3rem);
+    box-shadow: 0 2.5 4rem rgba(0, 0, 0, 0.5);
+  }
+
+  &:active{
+    transform: translateY(-1rem);
+    box-shadow: 0 5 5rem rgba(0, 0, 0, 1)
+  }
+}
+
+.parallax-window-blimp{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/blimp.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.website__img{
+  width: 50rem;
+  transition: all .3s;
+  color: white;
+
+  &:hover{
+    transform: translateY(-1.2rem) scale(1);
+    box-shadow: 0 3.5rem 8rem rgba(0 , 0, 0, 0.50);
+    outline: 1.5rem solid #8860D0;
+    outline-offset: 2rem;
+    opacity: 1;
+  }
+}
+
+.section-contacts{
+  background-color: #474B4F;
+}

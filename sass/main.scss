@@ -1,0 +1,30 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button.scss";
+@import "components/form.scss";
+@import "components/icons.scss";
+@import "components/sidenav.scss";
+@import "components/skillsbar.scss";
+@import "components/socialmedia.scss";
+
+@import "layout/grid.scss";
+@import "layout/navigation";
+
+@import "pages/home";

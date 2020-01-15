@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bb4a877ce5.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/design_brown.jpg">
+    <script>
+      function opennav(){
+        document.getElementById('slidenav').style.width="250px";
+      }
+
+      function closenav(){
+        document.getElementById('slidenav').style.width="0px";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div id="slidenav" class="sidebar__navpurple--Dark">
+        <div class="sidebar--header">
+          <h3>Welcome</h3>
+        </div>
+        <span class="close--icon" id="close--icon" onclick="closenav()"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+        <ul class="list-unstyled components">
+          <p>Main Menu</p>
+          <li class="active">
+            <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span> About Me</a>
+          </li>
+          <li>
+            <a href="projects.html"><span><i class="fa fa-suitcase" aria-hidden="true"></i></span> Portfolio</a>
+          </li>
+          <li>
+            <a href="contacts.html"><span><i class="fa fa-address-card-o" aria-hidden="true"></i></span> Contact</a>
+          </li>
+        </ul>
+      </div>
+      <span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+    </header>
+
+      <section class="section-contacts" id="contact">
+        <div class="u-center-text">
+          <h2 class="heading-secondary-contacts">
+            Lets work together!
+          </h2>
+        </div>
+        <div class="row">
+          <div class="form--wrapper">
+            <form action="contact-form.php" class="form" method="post">
+              <input type="text" placeholder="First Name" name="firstname" class="form--text-firstname" data-validation="required">
+              <input type="text" placeholder="Last Name" name="lastname" class="form--text-lastname" data-validation="required">
+              <input type="email" placeholder="Email" name="email" class="form--email" data-validation="email">
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" name="phone" class="form--tel-mobile" data-validation="length" data-validation-length="12">
+              <textarea placeholder= "What's on your mind?" name="questions" class="form--textarea" id="questions"></textarea>
+              <p class="form--textarea-numrestrict">(<span id="ques-max-length">500</span> characters left)</p>
+              <input type="submit" name="submit" class="form--submit">
+              <input type="reset" name="clear" class="form--clear">
+            </form>
+          </div>
+        </div>
+
+        <div class="header--socialmedia-banner">
+  				<span>Social Media</span>
+  			</div>
+
+  			<div class="social-media">
+  				<div class="button--icon-facebook">
+  					<a class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/alex.nicholas.562" target="_blank"></a>
+  				</div>
+  				<div class="button--icon-linkedin">
+  					<a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/alexnicho19/" target="_blank"></a>
+  				</div>
+  				<div class="button--icon-instagram">
+  					<a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/alexnicho3/?hl=en" target="_blank"></a>
+  				</div>
+  			</div>
+      </section>
+      <script>
+        $.validate();
+
+        $('#questions').restrictLength( $('#ques-max-length') );
+      </script>
+  </body>
+</html>

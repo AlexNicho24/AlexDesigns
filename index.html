@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/bb4a877ce5.js"></script>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" type="image/jpg" href="img/design_brown.jpg">
+		<script>
+			function opennav(){
+				document.getElementById('slidenav').style.width="250px";
+			}
+
+			function closenav(){
+				document.getElementById('slidenav').style.width="0px";
+			}
+		</script>
+	</head>
+
+	<body>
+		<header class="header-parallax" id="home">
+			<div id="slidenav" class="sidebar__navpurple--Dark">
+				<div class="sidebar--header">
+					<h3>Welcome</h3>
+				</div>
+				<span class="close--icon" id="close--icon" onclick="closenav()"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+				<ul class="list-unstyled components">
+					<p>Main Menu</p>
+					<li class="active">
+						<a href="#home"><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</a>
+					</li>
+					<li>
+						<a href="about.html"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span> About Me</a>
+					</li>
+					<li>
+						<a href="projects.html"><span><i class="fa fa-suitcase" aria-hidden="true"></i></span> Portfolio</a>
+					</li>
+					<li>
+						<a href="contacts.html"><span><i class="fa fa-address-card-o" aria-hidden="true"></i></span> Contact</a>
+					</li>
+				</ul>
+			</div>
+			<span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+
+			<div class="header__text--box" >
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Alex Nicholas</span>
+          <span class="heading-primary--sub">HTML5, CSS3, Javascript, Jquery</span>
+        </h1>
+        <a href="projects.html" class="btn btn--Orange btn--animated">Discover My Work</a>
+      </div>
+		</header>
+	</body>
+</html>

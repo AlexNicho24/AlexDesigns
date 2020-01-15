@@ -1,0 +1,73 @@
+.form{
+  &--wrapper{
+    width: 50rem;
+    margin: 0px auto;
+
+    & input[type=submit], input[type=reset]{
+      width: 7rem;
+      font-size: 14px;
+      cursor: pointer;
+      margin-right: 1.5rem;
+      margin-top: 2rem;
+      outline: none;
+      color: white;
+      border: none;
+      background-color: #86C232;
+      text-decoration: none;
+      float: left;
+      border-radius: 3rem;
+      transition: all .3s;
+    }
+
+    & input[type=submit]:hover,input[type=reset]:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    & input[type=submit]:active,input[type=reset]:active{
+      transform: translateY(-2px);
+      box-shadow: 0 .5rem .1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--text-firstname{
+    margin-right: 1rem;
+    width: 23rem;
+    font-size: 16px;
+  }
+
+  &--text-lastname{
+    float: left;
+    width: 23rem;
+    font-size: 16px;
+  }
+
+  &--email{
+    margin-top: 2rem;
+    display: block;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  &--tel-mobile{
+    display: block;
+    margin-top: 2rem;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  &--textarea{
+    display: block;
+    margin-top: 2rem;
+    width: 95%;
+    height: 160px;
+    font-size: 13px;
+  }
+
+  &--textarea-numrestrict{
+    color: #FFF;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-right: 3rem;
+  }
+}
