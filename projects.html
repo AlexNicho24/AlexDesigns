@@ -10,15 +10,23 @@
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="img/design_brown.jpg">
-		<script>
-			function opennav(){
-				document.getElementById('slidenav').style.width="250px";
-			}
+    <script>
+      document.addEventListener('DOMContentLoaded',opennav);
 
-			function closenav(){
-				document.getElementById('slidenav').style.width="0px";
-			}
-		</script>
+        function opennav(x){
+          var x = window.matchMedia("(max-width: 75em)");
+
+          if (x.matches) { // If media query matches
+            document.getElementById('slidenav').style.width="50rem";
+          }else{
+            document.getElementById('slidenav').style.width="25rem";
+          }
+        }
+
+        function closenav(){
+          document.getElementById('slidenav').style.width="0px";
+        }
+    </script>
   <head>
   <body>
     <main>
